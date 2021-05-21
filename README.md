@@ -137,7 +137,7 @@ This dataset is collection of 60,000 small square 28×28 pixel grayscale images 
 
 #### Final Image 
 <p align="center">
-  <img  src="real1.png" > 
+  <img  src="Hand Written Digits Generation - MNIST Dataset\Result.png" > 
 </p>
 
 
