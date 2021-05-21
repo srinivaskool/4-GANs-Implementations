@@ -1,29 +1,5 @@
 # 4-GANs-Implementations
 
-Human Faces
-https://colab.research.google.com/drive/18fLFoxI56ETCbLIDJKWTwTdvKfihKVnt?usp=sharing
-
-MNIST
-https://colab.research.google.com/drive/1s-Nc5RwPNyd9enJ52TmucFZcuIzads8P?usp=sharing
-
-ART
-https://colab.research.google.com/drive/1uUDzAK6St4_AZFu_uBVXQjxefGhNa8f4?usp=sharing
-
-Anime Faces
-https://colab.research.google.com/drive/1xFWyerR7-49Z-6lncSLfw_JJU8VUzhh5?usp=sharing
-
-
-Let's load this dataset using the ImageFolder class from torchvision. We will also resize and crop the images to 64x64 px, and normalize the pixel values with a mean & standard deviation of 0.5 for each channel. This will ensure that pixel values are in the range (-1, 1), which is more convenient for training the discriminator. We will also create a data loader to load the data in batches.
-
-
-
-
-The dataset has a single folder called images which contains all 63,000+ images in JPG format.
-
-
-
-# 4-GANs-Implementations
-
 Using the Prestained Mobilenet V2 model and OpenCV we detect human images wearing a mask or not along with Probability.
 
 <p align="center">
@@ -35,6 +11,7 @@ Using the Prestained Mobilenet V2 model and OpenCV we detect human images wearin
 ### Table of Contents
 
 - [Description](#description)
+- [Datasets and Colab Links](#Datasets-and-Project-Colab-Links)
 - [Results](#results)
 - [Project Layout](#project-layout)
 - [References](#references)
@@ -51,8 +28,6 @@ There are two neural networks: a Generator and a Discriminator. The generator ge
 GANs however, can be notoriously difficult to train, and are extremely sensitive to hyperparameters, activation functions and regularization. In this tutorial, we'll train a GAN to generate images of anime characters' faces.
 
 
-<br>
-
 ### Built With
 
 - PyTorch
@@ -67,21 +42,99 @@ To run the code on your computer locally, you'll need to set up Python, download
 
 ---
 
+## Datasets and Project Colab Links
+
+<br> 
+
+## Human Faces Generation
+
+### Dataset - [CelebFaces Attributes (CelebA) Dataset](https://www.kaggle.com/jessicali9530/celeba-dataset)
+
+This dataset is great for training and testing models for face detection, particularly for recognising facial attributes such as finding people with brown hair, are smiling, or wearing glasses.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18fLFoxI56ETCbLIDJKWTwTdvKfihKVnt?usp=sharing)
+
+
+## Anime Faces Generation 
+
+### Dataset - [Anime Face Dataset](https://www.kaggle.com/splcher/animefacedataset)
+
+This dataset is often used for varying projects with anime faces. I will keep this dataset up-to-date and clean, along with including fun scripts for generating anime waifus!
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1xFWyerR7-49Z-6lncSLfw_JJU8VUzhh5?usp=sharing)
+
+
+## Art Generation 
+
+### Dataset - [Best Artworks of All Time](https://www.kaggle.com/ikarus777/best-artworks-of-all-time)
+
+This dataset is collection of artworks of the 50 most influential artists of all time.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uUDzAK6St4_AZFu_uBVXQjxefGhNa8f4?usp=sharing)
+
+
+
+
+## Hand Written Digits Generation
+
+### Dataset - [MNIST](https://pytorch.org/vision/stable/datasets.html#mnist)
+
+This dataset is collection of 60,000 small square 28×28 pixel grayscale images of handwritten single digits between 0 and 9.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s-Nc5RwPNyd9enJ52TmucFZcuIzads8P?usp=sharing)
+
+
+
+
+
+---
+
 ## Results
+
 
   <br/>
 
 ### Anime Faces Generation 
 
 <p align="center">
-  <img  src="Anime Faces Generation - animefacedataset\Result.png" > 
+    <img  src="Anime Faces Generation - animefacedataset\video_to_gif.gif" > 
 </p>
 
 <p align="center">
-  <video autoplay loop src="Anime Faces Generation - animefacedataset\Training Video.avi" > </video>
+  <img  src="Anime Faces Generation - animefacedataset\Result.png" > 
 </p>
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+### Human Faces Generation 
+
+<p align="center">
+    <img  src="Human Faces Generation - celeba Dataset\video_to_gif.gif" > 
+</p>
+
+<p align="center">
+  <img  src="Human Faces Generation - celeba Dataset\Result.png" > 
+</p>
+
+### Art Generation 
+
+<p align="center">
+    <img  src="ART Generation - best-artworks-of-all-time Dataset\video_to_gif.gif" > 
+</p>
+
+<p align="center">
+  <img  src="ART Generation - best-artworks-of-all-time Dataset\Result.png" > 
+</p>
+
+### Hand Written Digits Generation 
+
+<p align="center">
+    <img  src="Hand Written Digits Generation - MNIST Dataset\video_to_gif.gif" > 
+</p>
+
+<p align="center">
+  <img  src="Hand Written Digits Generation - MNIST Dataset\Result.png" > 
+</p>
+
+
 
 
 #### [Back To The Top](#4-GANs-Implementations)
@@ -92,19 +145,53 @@ To run the code on your computer locally, you'll need to set up Python, download
 
 ```
 4-GANs-Implementations
-├─ Face_Mask_Detection.ipynb
-├─ Final Image.png
-├─ Images
-│  ├─ Only_Mask.jpg
-│  ├─ Sol_Mask.png
-│  ├─ Sol_No_Mask.png
-│  ├─ Sol_Only_Mask.png
-│  ├─ Without_Mask.jpg
-│  └─ With_Mask.jpg
+├─ Anime Faces Generation - animefacedataset
+│  ├─ DCGAN_Anime_Faces.ipynb
+│  ├─ model
+│  │  ├─ D.pth
+│  │  └─ G.pth
+│  ├─ Real Vs Fake Scores.png
+│  ├─ Real.png
+│  ├─ Result.png
+│  ├─ Training Video.avi
+│  └─ video_to_gif.gif
+├─ Architecture.webp
+├─ ART Generation - best-artworks-of-all-time Dataset
+│  ├─ GAN_ART.ipynb
+│  ├─ Loss vs Epoch.png
+│  ├─ model
+│  │  ├─ D.pth
+│  │  └─ G.pth
+│  ├─ Real vs Fake Scores.png
+│  ├─ Real.png
+│  ├─ Result.png
+│  ├─ Training Video.avi
+│  └─ video_to_gif.gif
+├─ Hand Written Digits Generation - MNIST Dataset
+│  ├─ Loss vs epoch.png
+│  ├─ MNIST GAN.ipynb
+│  ├─ model
+│  │  ├─ D.ckpt
+│  │  └─ G.ckpt
+│  ├─ Real vs Fake Scores.png
+│  ├─ real.png
+│  ├─ Result.png
+│  ├─ Training Video.avi
+│  └─ video_to_gif.gif
+├─ Human Faces Generation - celeba Dataset
+│  ├─ Human_Faces_DCGAN.ipynb
+│  ├─ Loss vs epoch.png
+│  ├─ model
+│  │  ├─ D.pth
+│  │  └─ G.pth
+│  ├─ Real vs Fake Score.png
+│  ├─ real.png
+│  ├─ Result.png
+│  ├─ Training Video.avi
+│  └─ video_to_gif.gif
 └─ README.md
 
 ```
-
 ---
 
 ## References
@@ -120,6 +207,7 @@ To run the code on your computer locally, you'll need to set up Python, download
 - Github - [Srinivas K](https://github.com/srinivaskool)
 
 #### [Back To The Top](#4-GANs-Implementations)
+
 
 
 
