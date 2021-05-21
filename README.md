@@ -43,30 +43,29 @@ To run the code on your computer locally, you'll need to set up Python, download
 ---
 
 ## Datasets and Project Colab Links
-
 <br> 
 
-## Human Faces Generation
+### Human Faces Generation
 
-### Dataset - [CelebFaces Attributes (CelebA) Dataset](https://www.kaggle.com/jessicali9530/celeba-dataset)
+#### Dataset - [CelebFaces Attributes (CelebA) Dataset](https://www.kaggle.com/jessicali9530/celeba-dataset)
 
 This dataset is great for training and testing models for face detection, particularly for recognising facial attributes such as finding people with brown hair, are smiling, or wearing glasses.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18fLFoxI56ETCbLIDJKWTwTdvKfihKVnt?usp=sharing)
 
 
-## Anime Faces Generation 
+### Anime Faces Generation 
 
-### Dataset - [Anime Face Dataset](https://www.kaggle.com/splcher/animefacedataset)
+#### Dataset - [Anime Face Dataset](https://www.kaggle.com/splcher/animefacedataset)
 
 This dataset is often used for varying projects with anime faces. I will keep this dataset up-to-date and clean, along with including fun scripts for generating anime waifus!
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1xFWyerR7-49Z-6lncSLfw_JJU8VUzhh5?usp=sharing)
 
 
-## Art Generation 
+### Art Generation 
 
-### Dataset - [Best Artworks of All Time](https://www.kaggle.com/ikarus777/best-artworks-of-all-time)
+#### Dataset - [Best Artworks of All Time](https://www.kaggle.com/ikarus777/best-artworks-of-all-time)
 
 This dataset is collection of artworks of the 50 most influential artists of all time.
 
@@ -77,7 +76,7 @@ This dataset is collection of artworks of the 50 most influential artists of all
 
 ## Hand Written Digits Generation
 
-### Dataset - [MNIST](https://pytorch.org/vision/stable/datasets.html#mnist)
+#### Dataset - [MNIST](https://pytorch.org/vision/stable/datasets.html#mnist)
 
 This dataset is collection of 60,000 small square 28×28 pixel grayscale images of handwritten single digits between 0 and 9.
 
